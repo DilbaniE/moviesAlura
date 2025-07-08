@@ -1,7 +1,7 @@
 package org.alura.calcularTiempo;
 
 
-import org.alura.screenmatch.Titulo;
+import org.alura.screenmatchmodelos.Titulo;
 
 public class CalcularTiempo {
 

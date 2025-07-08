@@ -1,4 +1,4 @@
-package org.alura.screenmatch;
+package org.alura.screenmatchmodelos;
 
 public class Serie extends Titulo{
     private int temporada;

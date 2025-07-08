@@ -1,8 +1,10 @@
 package org.alura;
 
 import org.alura.calcularTiempo.CalcularTiempo;
-import org.alura.screenmatch.Pelicula;
-import org.alura.screenmatch.Serie;
+import org.alura.calcularTiempo.FiltroRecomendaciones;
+import org.alura.screenmatchmodelos.Episodio;
+import org.alura.screenmatchmodelos.Pelicula;
+import org.alura.screenmatchmodelos.Serie;
 
 public class Principal {
     public static void main(String[] args) {
@@ -18,7 +20,7 @@ public class Principal {
     peli.evalua(20);
     peli.evalua(30);
     System.out.println(peli.getTotalEvaluaciones());
-    System.out.println(peli.cacalaMedia());
+    System.out.println(peli.calculaMedia());
 
     Pelicula movie = new Pelicula();
     movie.setTitulo("Dori");
@@ -39,6 +41,17 @@ public class Principal {
     calculadora.incluye(serie);
     calculadora.incluye(movie);
     System.out.println("Tiempo necesario para ver tus pelis favoritas" + calculadora.getTiempoTotal());
+
+    FiltroRecomendaciones filtro = new FiltroRecomendaciones();
+    filtro.filtra(peli);
+
+    Episodio episodio = new Episodio();
+    episodio.setNumero(4);
+    episodio.setNombre("Game of Thrones");
+    episodio.setSerie(serie);
+    episodio.setTotalVisualizaciones(50);
+
+    FiltroRecomendaciones.filtra(episodio);
 
 }
 }

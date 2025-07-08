@@ -1,4 +1,4 @@
-package org.alura.screenmatch;
+package org.alura.screenmatchmodelos;
 
 public class Titulo {
     private String titulo;
@@ -53,7 +53,7 @@ public class Titulo {
         totalEvaluaciones ++;
     }
 
-    public double cacalaMedia(){
+    public double calculaMedia(){
         return sumaEvaluaciones/totalEvaluaciones;
     }
 }
