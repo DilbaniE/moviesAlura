@@ -40,6 +40,10 @@ public class Titulo {
         return totalEvaluaciones;
     }
 
+    public int getFechaDeLanzamiiento() {
+        return fechaDeLanzamiiento;
+    }
+
     public void muestraFichaTecnica(){
         System.out.println("nombre de la pelicula" + titulo);
         System.out.println("fecha de lanzamiento" + fechaDeLanzamiiento);

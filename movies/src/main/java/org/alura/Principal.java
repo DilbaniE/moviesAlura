@@ -6,6 +6,8 @@ import org.alura.screenmatchmodelos.Episodio;
 import org.alura.screenmatchmodelos.Pelicula;
 import org.alura.screenmatchmodelos.Serie;
 
+import java.util.ArrayList;
+
 public class Principal {
     public static void main(String[] args) {
 
@@ -52,6 +54,26 @@ public class Principal {
     episodio.setTotalVisualizaciones(50);
 
     FiltroRecomendaciones.filtra(episodio);
+
+    var  peliculaDeDilbani = new Pelicula();
+    peliculaDeDilbani.setTitulo("Dori");
+    peliculaDeDilbani.setFechaDeLanzamiiento(2008);
+    peliculaDeDilbani.setDuracion(120);
+
+    ArrayList<Pelicula> listaPeliculas = new ArrayList<>();
+    listaPeliculas.add(peli);
+    listaPeliculas.add(movie);
+    listaPeliculas.add(peliculaDeDilbani);
+
+    System.out.println("Tamaño de la lista" + listaPeliculas.size());
+    System.out.println("La primera pelicula es: " + listaPeliculas.get(0).getTitulo());
+
+    System.out.println(listaPeliculas.toString());
+
+    System.out.println("toString de la pelicula es: " + listaPeliculas.get(0).toString());
+
+
+
 
 }
 }
